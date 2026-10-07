@@ -63,8 +63,11 @@ details.card[open]>summary:after{content:'▲'}
 .schedule{border-right:4px solid var(--secondary);padding-right:14px;margin:0 0 27px}
 .time-block{display:flex;align-items:center;gap:9px;font-weight:800;color:var(--primary);font-size:1.08rem;margin-bottom:7px}
 .clock{background:#e7edff;color:#2b438f;padding:2px 8px;border-radius:5px;white-space:nowrap}
-.visual{height:180px;border-radius:10px;margin:10px 0;background:#e7eff8;box-shadow:inset 0 0 0 1px rgba(0,0,0,.04); position:relative; overflow:hidden;}
-.visual img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;}
+.visual{height:150px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:4.3rem;margin:10px 0;background:linear-gradient(135deg,#e7eff8,#f8f3e6);box-shadow:inset 0 0 0 1px rgba(0,0,0,.04); position:relative; overflow:hidden;}
+.visual.has-img{font-size:0;background:#dfe7ef}
+.visual img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .4s ease-in-out;}
+.visual img.ok{opacity:1;}
+.visual .credit{position:absolute;left:6px;bottom:6px;z-index:2;font-size:.62rem;line-height:1;padding:3px 6px;border-radius:5px;background:rgba(0,0,0,.55);color:#fff;text-decoration:none;font-family:sans-serif;}
 .info{background:var(--soft);border:1px solid var(--line);border-radius:9px;margin-top:9px;overflow:hidden}
 .info>summary{padding:10px 12px;color:#244e91;font-weight:800;cursor:pointer;list-style:none;background:var(--soft-blue)}
 .info>summary::-webkit-details-marker{display:none}
@@ -108,32 +111,32 @@ details.card[open]>summary:after{content:'▲'}
   <a href="#day1">8/10</a><a href="#day2">9/10</a><a href="#day3">10/10</a><a href="#day4">11/10</a><a href="#day5">12/10</a><a href="#day6">13/10</a><a href="#day7">14/10</a><a href="#day8">15/10</a><a href="#checklist">רשימות</a><a href="#sources">מקורות</a>
 </nav></div>
 
-<h1>קליפורניה 2026</h1>
+<h1>קליפורניה 🚐 2026</h1>
 <div class="subtitle">8–15 באוקטובר · RV ‏23'11" · שני מבוגרים · Arya ‏19 חודשים · Leo service dog</div>
 
 <div class="pills">
-  <span class="pill">לילה 8/10: North Pines</span>
-  <span class="pill">9–12/10: Laguna Seca</span>
-  <span class="pill">לילה 13/10: Sunset State Beach</span>
-  <span class="pill">לילה 14/10: עדיין פתוח</span>
-  <span class="pill">Leo: service dog</span>
+  <span class="pill">🏔️ לילה 8/10: North Pines</span>
+  <span class="pill">🏁 9–12/10: Laguna Seca</span>
+  <span class="pill">🏖️ לילה 13/10: Sunset State Beach</span>
+  <span class="pill">❓ לילה 14/10: עדיין פתוח</span>
+  <span class="pill">🐕 Leo: service dog</span>
 </div>
 
 <div class="notice-grid">
   <div class="notice critical">
-    <strong>תיקון בטיחות חשוב: מושב Arya</strong>
+    <strong>🚨 תיקון בטיחות חשוב: מושב Arya</strong>
     ה-Doona לא אמורה להיות מותקנת "עם כיוון הנסיעה" רק בגלל שזה RV. בגיל 19 חודשים, אם Arya מתחת ל-40 lb ומתחת ל-40 in, החוק בקליפורניה דורש מושב נגד כיוון הנסיעה. ב-Thor יש הנחיות להתקנת מושב אחורי גם כשהשולחן של ה-dinette מקופל למטה. באיסוף: התקנה בפועל בלבד, לפי המושב והחגורה שיש ברכב הספציפי.
   </div>
   <div class="notice good">
-    <strong>מה עוד השתנה במסלול</strong>
+    <strong>🧭 מה עוד השתנה במסלול</strong>
     Arata's נשארת ל-14/10, וזה נכון גיאוגרפית: Sunset → Henry Cowell → Arata's → Half Moon Bay → East Bay. האקווריום נשאר בשבת 10/10 עד שתחליט אחרת.
   </div>
   <div class="notice warn">
-    <strong>Yosemite — לבדוק שוב בבוקר 8/10</strong>
+    <strong>🔥 Yosemite — לבדוק שוב בבוקר 8/10</strong>
     נכון לעדכוני NPS האחרונים הזמינים, הפארק פתוח אך קיימות מגבלות אש וסגירות הקשורות ל-Dome Fire. המסלול שלכם בעמק אינו במסלול הסגירות שפורסם, אך מצב עשן/כבישים יכול להשתנות.
   </div>
   <div class="notice warn">
-    <strong>Highway 1 — Big Sur</strong>
+    <strong>🛣️ Highway 1 — Big Sur</strong>
     הכביש פתוח, אבל יש traffic control 24/7 ב-Rocky Creek Bridge עד 30/11/2026. ב-12/10 לא מתכננים יום לפי Google Maps "על הדקה" — משאירים מרווח.
   </div>
 </div>
@@ -149,18 +152,18 @@ details.card[open]>summary:after{content:'▲'}
 <iframe class="google-map" loading="lazy" src="https://maps.google.com/maps?saddr=San+Carlos,+CA&daddr=North+Pines+Campground,+Yosemite+Valley,+CA+to:Laguna+Seca+Recreation+Area,+CA+to:Point+Lobos,+CA+to:Big+Sur,+CA+to:Sunset+State+Beach,+CA+to:Dumbarton+Quarry+Campground,+Fremont,+CA+to:San+Carlos,+CA&output=embed"></iframe>
 
 <section class="route-box">
-  <h3>אסטרטגיית המסלול</h3>
+  <h3>🎯 אסטרטגיית המסלול</h3>
   <div>המטרה היא לא "לסמן וי" על כמה שיותר מקומות אלא להחזיק קצב שמתאים ל-RV, לפעוטה ולכלב שירות. לכן יש יום עיר/אקווריום, יום שמורה, יום Big Sur, יום חוף, ויום Redwoods + Pumpkin Farm.</div>
 </section>
 
 <details class="card" id="day1" open>
   <summary>יום 1 · חמישי 8/10 · San Carlos → Yosemite</summary>
   <div class="content">
-    <div class="day-meta"><span>North Pines</span><span>RV dry camping</span><span>מטרה: להגיע, לא לטייל</span></div>
+    <div class="day-meta"><span>🛏️ North Pines</span><span>RV dry camping</span><span>מטרה: להגיע, לא לטייל</span></div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">13:00</span> איסוף ה-RV ב-San Carlos</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Winnebago_Motorhome.jpg/800px-Winnebago_Motorhome.jpg" alt="RV"></div>
+      <div class="visual">🚐</div>
       <div class="legend"><span class="tag risk">חובה</span></div>
       <details class="info">
         <summary>בדיקת מסירה של 30–45 דקות — לא לוותר</summary>
@@ -178,7 +181,7 @@ details.card[open]>summary:after{content:'▲'}
 
     <div class="schedule">
       <div class="time-block"><span class="clock">14:00–14:45</span> קניות ואיסוף groceries</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Shopping_Cart_Filled_With_Groceries.jpg/800px-Shopping_Cart_Filled_With_Groceries.jpg" alt="Groceries"></div>
+      <div class="visual">🛒</div>
       <details class="info">
         <summary>איך לחסוך זמן</summary>
         <div class="inner">
@@ -190,13 +193,13 @@ details.card[open]>summary:after{content:'▲'}
 
     <div class="schedule">
       <div class="time-block"><span class="clock">15:00–19:30/20:00</span> נסיעה ל-Yosemite Valley</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Yosemite_Valley_from_Tunnel_View.jpg/800px-Yosemite_Valley_from_Tunnel_View.jpg" alt="Yosemite Valley"></div>
+      <div class="visual">🏔️</div>
       <details class="info">
         <summary>הדרך והלילה הראשון</summary>
         <div class="inner">
           <p>הזמן כאן הוא טווח בכוונה. עם RV, עצירת אוכל/דלק ותנועה, אל תבנה על הגעה של 18:30 בדיוק.</p>
           <p>North Pines Site 323 מתאים ל-RV שלכם: האתר מוגדר RV nonelectric, מאפשר RV עד 40 ft, עד 6 אנשים, וחיות מחמד. הצ'ק-אין 12:00 והצ'ק-אאוט 12:00.</p>
-          <div class="success">מלאו מים לפני Yosemite. אל תשאירו מזון או אוכל של Leo מחוץ ל-RV אפילו לזמן קצר; ב-Yosemite כללי אחסון מזון חלים 24/7.</div>
+          <div class="success">🧊 מלאו מים לפני Yosemite. אל תשאירו מזון או אוכל של Leo מחוץ ל-RV אפילו לזמן קצר; ב-Yosemite כללי אחסון מזון חלים 24/7.</div>
         </div>
       </details>
     </div>
@@ -206,11 +209,11 @@ details.card[open]>summary:after{content:'▲'}
 <details class="card" id="day2">
   <summary>יום 2 · שישי 9/10 · Yosemite → Tunnel View → Laguna Seca</summary>
   <div class="content">
-    <div class="day-meta"><span>Laguna Seca</span><span>Yosemite בבוקר</span><span>נסיעת מעבר ארוכה</span></div>
+    <div class="day-meta"><span>🛏️ Laguna Seca</span><span>Yosemite בבוקר</span><span>נסיעת מעבר ארוכה</span></div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">07:00–08:00</span> ארוחת בוקר, קיפול ופינוי North Pines</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Campground_at_Yosemite.jpg/800px-Campground_at_Yosemite.jpg" alt="Yosemite Camping"></div>
+      <div class="visual">🌲</div>
       <details class="info">
         <summary>למה לפנות ב-08:00 ולא ב-11:30?</summary>
         <div class="inner">
@@ -222,7 +225,7 @@ details.card[open]>summary:after{content:'▲'}
 
     <div class="schedule">
       <div class="time-block"><span class="clock">08:15–10:15</span> Lower Yosemite Fall + Cook's Meadow</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Lower_Yosemite_Falls_May_2017.jpg/800px-Lower_Yosemite_Falls_May_2017.jpg" alt="Lower Yosemite Fall"></div>
+      <div class="visual">💦</div>
       <div class="legend"><span class="tag stroller">עגלה: מצוין</span><span class="tag carrier">מנשא: לא נחוץ כאן</span><span class="tag service">Leo: מותר במסלול הסלול</span></div>
       <details class="info">
         <summary>המסלול שהכי מתאים לכם</summary>
@@ -236,7 +239,7 @@ details.card[open]>summary:after{content:'▲'}
 
     <div class="schedule">
       <div class="time-block"><span class="clock">10:15–11:30</span> Valley / נהר / שירותים / מנוחה</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Merced_River_Yosemite.jpg/800px-Merced_River_Yosemite.jpg" alt="Merced River"></div>
+      <div class="visual">🏞️</div>
       <details class="info">
         <summary>אל תכננו עוד מסלול גדול</summary>
         <div class="inner"><p>זה בדיוק המקום לתת ל-Arya זמן חופשי ולכם להוריד דופק. אין צורך לדחוף Mirror Lake או מסלול ארוך.</p></div>
@@ -245,14 +248,14 @@ details.card[open]>summary:after{content:'▲'}
 
     <div class="schedule">
       <div class="time-block"><span class="clock">11:30–12:15</span> חזרה ל-RV + ארוחת צהריים</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Picnic_table_in_Yosemite.jpg/800px-Picnic_table_in_Yosemite.jpg" alt="Picnic Yosemite"></div>
+      <div class="visual">🥪</div>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">12:15–13:15</span> יציאה ל-Tunnel View — רק אם clearance/שילוט מאפשרים</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Tunnel_View_Yosemite_Valley.jpg/800px-Tunnel_View_Yosemite_Valley.jpg" alt="Tunnel View"></div>
+      <div class="visual">🗻</div>
       <details class="info">
-        <summary>נקודת RV קריטית</summary>
+        <summary>⚠️ נקודת RV קריטית</summary>
         <div class="inner">
           <p>ה-RV שלכם בערך 11 ft גובה. NPS מציין ל-Wawona Road מגבלת גובה של 10'2" בגובה השפה (curb), אך מסביר שהגובה במרכז הנתיב גדול יותר ושכלי רכב חוקיים בקליפורניה יכולים לעבור תוך שמירה על הנתיב. זה לא משהו שכדאי "לנחש".</p>
           <p>ב-Tunnel View, כלי רכב מעל 21 ft נדרשים להשתמש, כאשר פנוי, בחניות הייעודיות לאוטובוסים/כלי רכב גדולים. אם השילוט בפועל או פקח אומרים אחרת — השילוט מנצח.</p>
@@ -263,7 +266,7 @@ details.card[open]>summary:after{content:'▲'}
 
     <div class="schedule">
       <div class="time-block"><span class="clock">13:15–18:00/19:00</span> נסיעה ל-Laguna Seca</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/WeatherTech_Raceway_Laguna_Seca.jpg/800px-WeatherTech_Raceway_Laguna_Seca.jpg" alt="Laguna Seca"></div>
+      <div class="visual">🛣️</div>
       <details class="info">
         <summary>תכננו 4.5–5.5 שעות, לא 4.5 בדיוק</summary>
         <div class="inner"><p>זה יום מעבר. אם הגעתם עייפים — אוכלים, מקלחת, ושינה. אין שום אטרקציה נוספת בערב.</p></div>
@@ -275,11 +278,11 @@ details.card[open]>summary:after{content:'▲'}
 <details class="card" id="day3">
   <summary>יום 3 · שבת 10/10 · Monterey Bay Aquarium + Monterey + Asilomar</summary>
   <div class="content">
-    <div class="day-meta"><span>Laguna Seca</span><span>אקווריום נשאר בינתיים</span><span>שפל 17:18 · שקיעה 18:37</span></div>
+    <div class="day-meta"><span>🛏️ Laguna Seca</span><span>אקווריום נשאר בינתיים</span><span>שפל 17:18 · שקיעה 18:37</span></div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">08:00–09:00</span> קימה, ארוחת בוקר ונסיעה למונטריי</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Monterey_harbor_morning.jpg/800px-Monterey_harbor_morning.jpg" alt="Monterey Morning"></div>
+      <div class="visual">🌊</div>
       <details class="info">
         <summary>שבת = להגיע מוקדם</summary>
         <div class="inner"><p>אתם ביום שבת, ולכן לא הייתי דוחה את ההגעה לצהריים. המטרה היא להיות כבר באזור האקווריום לפני הפתיחה/סביב הפתיחה.</p></div>
@@ -288,7 +291,7 @@ details.card[open]>summary:after{content:'▲'}
 
     <div class="schedule">
       <div class="time-block"><span class="clock">10:00–13:30</span> Monterey Bay Aquarium</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Monterey_Bay_Aquarium_Outer_Bay_exhibit.jpg/800px-Monterey_Bay_Aquarium_Outer_Bay_exhibit.jpg" alt="Monterey Bay Aquarium"></div>
+      <div class="visual">🐠</div>
       <div class="legend"><span class="tag stroller">עגלה: מותרת ברוב האקווריום</span><span class="tag service">Leo: service dog מותר עם החרגות</span></div>
       <details class="info">
         <summary>מה באמת חשוב + איפה חונים</summary>
@@ -296,7 +299,7 @@ details.card[open]>summary:after{content:'▲'}
           <p>הכרטיס למבוגר ב-2026 הוא $65; ילדים עד גיל 4 נכנסים חינם. האקווריום פתוח למכירה עד 31/12/2026 וההמלצה הרשמית היא לקנות מראש.</p>
           <p><strong>Leo:</strong> מותר כ-service animal. יש החרגות ל-Aviary ולכמה tours/encounters. יש אזורי relief בחוץ וניתן לקבל handstamp לכניסה חוזרת.</p>
           <p><strong>עגלה:</strong> מותרת ברוב האקווריום, עם החרגות מסוימות. עבור Arya זה נוח יותר ממנשא במשך 3–3.5 שעות.</p>
-          <div class="parking-tip"><strong>חניה שהחלפנו מהגרסה הישנה:</strong> האקווריום עצמו לא מציע parking ציבורי. במקום להסתמך על "Waterfront + trolley", יש פתרון RV ספציפי ב-435 Cannery Row (Cannery Row Parking). האתר מפרסם RV Day Parking ומבקש להתקשר לפני הכניסה; מדריך Q&amp;A של Tripadvisor מציין שהמגרש אירח יחידות עד 40 ft. ל-RV שלכם (~24 ft) זה נראה מתאים, אבל בגלל שהחניה מוגבלת — שיחת טלפון באותו בוקר.</div>
+          <div class="parking-tip"><strong>🚐 חניה שהחלפנו מהגרסה הישנה:</strong> האקווריום עצמו לא מציע parking ציבורי. במקום להסתמך על "Waterfront + trolley", יש פתרון RV ספציפי ב-435 Cannery Row (Cannery Row Parking). האתר מפרסם RV Day Parking ומבקש להתקשר לפני הכניסה; מדריך Q&amp;A של Tripadvisor מציין שהמגרש אירח יחידות עד 40 ft. ל-RV שלכם (~24 ft) זה נראה מתאים, אבל בגלל שהחניה מוגבלת — שיחת טלפון באותו בוקר.</div>
           <p class="small">אל תחנה במוסך/חניון מקורה בלי אישור גובה. במטרות RV עדיף surface lot מאשר להמר על clearance.</p>
         </div>
       </details>
@@ -304,12 +307,12 @@ details.card[open]>summary:after{content:'▲'}
 
     <div class="schedule">
       <div class="time-block"><span class="clock">13:30–14:15</span> ארוחת צהריים</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Seafood_lunch.jpg/800px-Seafood_lunch.jpg" alt="Lunch"></div>
+      <div class="visual">🍽️</div>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">14:15–15:00</span> Cannery Row / Waterfront</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Cannery_Row_Monterey.jpg/800px-Cannery_Row_Monterey.jpg" alt="Cannery Row"></div>
+      <div class="visual">⚓</div>
       <details class="info">
         <summary>קצר ולעניין</summary>
         <div class="inner"><p>אחרי 3.5 שעות בפנים, אין צורך להפוך את זה לעוד שעתיים של קניות. הליכה קצרה, sea lions אם יש, וקפה.</p></div>
@@ -318,7 +321,7 @@ details.card[open]>summary:after{content:'▲'}
 
     <div class="schedule">
       <div class="time-block"><span class="clock">15:15–18:20</span> Pacific Grove + Asilomar + tide pools + שקיעה</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Asilomar_State_Beach.jpg/800px-Asilomar_State_Beach.jpg" alt="Asilomar Tide Pools"></div>
+      <div class="visual">🪸</div>
       <div class="legend"><span class="tag stroller">עגלה: לחלקים השטוחים</span><span class="tag carrier">מנשא: עדיף בירידה לסלעים / tide pools</span><span class="tag risk">נעלי אחיזה טובות — לא כפכפים</span></div>
       <details class="info">
         <summary>התזמון כאן מדויק יותר ממה שהיה בגרסה הישנה</summary>
@@ -336,11 +339,11 @@ details.card[open]>summary:after{content:'▲'}
 <details class="card" id="day4">
   <summary>יום 4 · ראשון 11/10 · Point Lobos + Carmel</summary>
   <div class="content">
-    <div class="day-meta"><span>Laguna Seca</span><span>RV נשאר ב-Crossroads</span><span>מנשא = יתרון אמיתי</span></div>
+    <div class="day-meta"><span>🛏️ Laguna Seca</span><span>RV נשאר ב-Crossroads</span><span>מנשא = יתרון אמיתי</span></div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">08:15–09:00</span> Laguna Seca → Crossroads Park &amp; Ride</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/California_Highway_1_scenic.jpg/800px-California_Highway_1_scenic.jpg" alt="Driving to Carmel"></div>
+      <div class="visual">🚗</div>
       <details class="info">
         <summary>הפתרון ל-RV של Point Lobos</summary>
         <div class="inner">
@@ -353,7 +356,7 @@ details.card[open]>summary:after{content:'▲'}
 
     <div class="schedule">
       <div class="time-block"><span class="clock">09:15–11:30</span> Point Lobos</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Point_Lobos_State_Natural_Reserve.jpg/800px-Point_Lobos_State_Natural_Reserve.jpg" alt="Point Lobos"></div>
+      <div class="visual">🦭</div>
       <div class="legend"><span class="tag stroller">Cypress Grove: נוח גם לעגלה בחלקים המונגשים</span><span class="tag carrier">Sea Lion Point / קטעים סלעיים: מנשא עדיף</span><span class="tag service">Leo: service dog מותר</span></div>
       <details class="info">
         <summary>המסלול שעכשיו אפשר לפתוח בזכות המנשא</summary>
@@ -361,14 +364,14 @@ details.card[open]>summary:after{content:'▲'}
           <p><strong>Cypress Grove:</strong> כ-0.8 mile בסך הכול, ומתוכו כ-0.25 mile נגיש במלואו. יש חניה ושירותים לידו.</p>
           <p><strong>Sea Lion Point:</strong> קטע קצר של כ-0.4 mile נכלל באזור הנגיש. אפשר להאריך עם Sand Hill אם Arya במצב רוח טוב.</p>
           <p><strong>Bird Island:</strong> 0.88 mile out-and-back, נגיש יחסית, עם משטח aggregate/rock/wood. אפשרי, אבל לא חובה.</p>
-          <div class="success">בזכות המנשא, לא צריך יותר להימנע מ-Point Lobos רק בגלל עגלה. העגלה נשארת אופציה ב-Cypress Grove; המנשא נותן לכם חופש לקטעים שאינם נוחים לגלגלים.</div>
+          <div class="success">💡 בזכות המנשא, לא צריך יותר להימנע מ-Point Lobos רק בגלל עגלה. העגלה נשארת אופציה ב-Cypress Grove; המנשא נותן לכם חופש לקטעים שאינם נוחים לגלגלים.</div>
         </div>
       </details>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">11:30–12:00</span> Uber חזרה ל-Crossroads — או ישירות ל-Carmel</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Uber_car.jpg/800px-Uber_car.jpg" alt="Uber Ride"></div>
+      <div class="visual">📱</div>
       <details class="info">
         <summary>הגרסה שאני מעדיף</summary>
         <div class="inner"><p>אם הנהג מסכים: Point Lobos → Uber ישירות ל-Carmel-by-the-Sea. ככה לא צריך לעשות Crossroads → RV → Carmel. בסוף היום חוזרים ב-Uber ל-Crossroads, לוקחים את ה-RV ונוסעים ל-Laguna Seca.</p></div>
@@ -377,7 +380,7 @@ details.card[open]>summary:after{content:'▲'}
 
     <div class="schedule">
       <div class="time-block"><span class="clock">12:00–15:15</span> Carmel-by-the-Sea + lunch + Carmel Beach</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Carmel_beach.jpg/800px-Carmel_beach.jpg" alt="Carmel Beach"></div>
+      <div class="visual">🏖️</div>
       <div class="legend"><span class="tag stroller">עיר: עגלה</span><span class="tag carrier">חוף חול: מנשא לעיתים נוח יותר מעגלה</span></div>
       <details class="info">
         <summary>למה לא להביא את ה-RV לעיר</summary>
@@ -387,7 +390,7 @@ details.card[open]>summary:after{content:'▲'}
 
     <div class="schedule">
       <div class="time-block"><span class="clock">15:15–16:30</span> Uber → Crossroads → RV → Laguna Seca</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Winnebago_Motorhome.jpg/800px-Winnebago_Motorhome.jpg" alt="RV Return"></div>
+      <div class="visual">🚐</div>
     </div>
   </div>
 </details>
@@ -395,42 +398,42 @@ details.card[open]>summary:after{content:'▲'}
 <details class="card" id="day5">
   <summary>יום 5 · שני 12/10 · Zoom + Big Sur</summary>
   <div class="content">
-    <div class="day-meta"><span>Laguna Seca</span><span>Zoom 06:00–08:00</span><span>Highway 1 traffic control</span></div>
+    <div class="day-meta"><span>🛏️ Laguna Seca</span><span>Zoom 06:00–08:00</span><span>Highway 1 traffic control</span></div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">06:00–08:00</span> Zoom של Yaara</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Laptop_on_desk.jpg/800px-Laptop_on_desk.jpg" alt="Zoom Work"></div>
+      <div class="visual">💻</div>
       <details class="info"><summary>בזמן ה-Zoom</summary><div class="inner"><p>אתה + Arya: ארוחת בוקר, התארגנות, צעצועים, בלי לצאת למסלול גדול.</p></div></details>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">08:30–09:15</span> Laguna Seca → Garrapata</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Garrapata_State_Park_coast.jpg/800px-Garrapata_State_Park_coast.jpg" alt="Garrapata"></div>
+      <div class="visual">🌊</div>
       <div class="legend"><span class="tag carrier">מנשא: טוב אם יורדים לשביל קצר</span><span class="tag service">Leo: service dog מותר</span></div>
       <details class="info"><summary>Garrapata</summary><div class="inner"><p>Garrapata הוא אחד המקומות שחוזרים שוב ושוב בהמלצות של מבקרים בגלל ה-coastline הדרמטי. אל תנסה "למצות את הפארק"; 30–45 דקות מספיקות לחוויית Big Sur ראשונה.</p><p>חיות מחמד רגילות מותרות רק באזורים מוגדרים, אבל service dogs רשאים להגיע לאזורי הציבור הרלוונטיים.</p></div></details>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">09:45–10:20</span> Hurricane Point + Bixby Bridge</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Bixby_Creek_Bridge_Big_Sur.jpg/800px-Bixby_Creek_Bridge_Big_Sur.jpg" alt="Bixby Bridge"></div>
+      <div class="visual">🌉</div>
       <details class="info"><summary>חניה וציוד</summary><div class="inner"><p>Hurricane Point הוא windy כמעט תמיד. זו עצירת צילום, לא פיקניק של שעה.</p><p>אל תבנה על חניה מסודרת ליד Bixby עם ה-RV. אם אין מקום חוקי ונוח — ממשיכים.</p></div></details>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">10:20–12:30</span> נסיעה דרומה ב-Big Sur + עצירות חוקיות</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Big_Sur_coastline.jpg/800px-Big_Sur_coastline.jpg" alt="Big Sur Driving"></div>
+      <div class="visual">🛣️</div>
       <div class="legend"><span class="tag risk">לא עוצרים על שוליים לא חוקיים</span></div>
       <details class="info"><summary>עדכון כביש חשוב</summary><div class="inner"><p>Caltrans מדווח על traffic control 24/7 ב-Rocky Creek Bridge עד 30/11/2026. זה לא סוגר את הכביש, אבל כן יכול להוסיף זמן. ב-12/10 יש גם סיכוי לתנאי רוח/גלים וערפל — כדאי להשאיר flex.</p></div></details>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">12:30–13:30</span> Big Sur Valley lunch</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Big_Sur_River_Inn.jpg/800px-Big_Sur_River_Inn.jpg" alt="Big Sur Lunch"></div>
+      <div class="visual">🥗</div>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">13:30–15:00</span> Partington Cove — אופציונלי, מנשא בלבד</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Partington_Cove_Big_Sur.jpg/800px-Partington_Cove_Big_Sur.jpg" alt="Partington Cove"></div>
+      <div class="visual">🪨</div>
       <div class="legend"><span class="tag carrier">מנשא: כן</span><span class="tag stroller">עגלה: לא</span><span class="tag risk">ירידה תלולה בחזור</span></div>
       <details class="info">
         <summary>האם עכשיו כן להוסיף אותו?</summary>
@@ -440,7 +443,7 @@ details.card[open]>summary:after{content:'▲'}
 
     <div class="schedule">
       <div class="time-block"><span class="clock">15:00–17:30</span> חזרה ל-Laguna Seca</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/California_Highway_1_scenic.jpg/800px-California_Highway_1_scenic.jpg" alt="Return Drive"></div>
+      <div class="visual">↩️</div>
     </div>
   </div>
 </details>
@@ -448,35 +451,35 @@ details.card[open]>summary:after{content:'▲'}
 <details class="card" id="day6">
   <summary>יום 6 · שלישי 13/10 · Moss Landing → Capitola → Sunset State Beach</summary>
   <div class="content">
-    <div class="day-meta"><span>Sunset State Beach</span><span>יום מעבר קל</span><span>לא דוחפים Santa Cruz אם עייפים</span></div>
+    <div class="day-meta"><span>🛏️ Sunset State Beach</span><span>יום מעבר קל</span><span>לא דוחפים Santa Cruz אם עייפים</span></div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">07:30–08:30</span> קימה + ארוחת בוקר + checkout Laguna Seca</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Coffee_and_breakfast.jpg/800px-Coffee_and_breakfast.jpg" alt="Breakfast"></div>
+      <div class="visual">🌤️</div>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">09:15–10:30</span> Moss Landing / wildlife</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Sea_Otter_Moss_Landing.jpg/800px-Sea_Otter_Moss_Landing.jpg" alt="Moss Landing Sea Otters"></div>
+      <div class="visual">🦦</div>
       <div class="legend"><span class="tag stroller">עגלה / טיול קצר</span><span class="tag service">Leo: service dog באזור הציבורי</span></div>
       <details class="info"><summary>ציפיות נכונות</summary><div class="inner"><p>המטרה היא wildlife viewing ליד הנמל/הסביבה, לא "להבטיח" Sea Otter. תנו 45–60 דקות וחפשו לוטרות/כלבי ים כשהתנאים מתאימים.</p></div></details>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">11:15–13:15</span> Capitola Village</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Capitola_Village_California.jpg/800px-Capitola_Village_California.jpg" alt="Capitola Village"></div>
+      <div class="visual">🌴</div>
       <div class="legend"><span class="tag stroller">עגלה: טוב בעיר</span><span class="tag carrier">מנשא: טוב אם יורדים לאזורי חוף צפופים</span></div>
       <details class="info"><summary>RV = לא יורדים לעומק הכפר</summary><div class="inner"><p>הרחובות והחניה במרכז Capitola לא שווים את המאבק עם 24-ft Class C. חפשו חניה חוקית שמתאימה לכלי גדול באותה שעה; אם זה מתחיל להסתבך, מסיימים ביקור קצר ומשאירים זמן ל-Sunset.</p><p>Santa Cruz נשארת bonus בלבד. אם 13:00 ואתם עדיין ב-Capitola — הייתי מדלג.</p></div></details>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">13:15–14:00</span> נסיעה ל-Sunset State Beach</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Winnebago_Motorhome.jpg/800px-Winnebago_Motorhome.jpg" alt="RV Drive"></div>
+      <div class="visual">🚐</div>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">14:00–18:30</span> Sunset State Beach + החוף + ערב בקמפינג</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Sunset_State_Beach_Monterey_Bay.jpg/800px-Sunset_State_Beach_Monterey_Bay.jpg" alt="Sunset State Beach"></div>
+      <div class="visual">🌅</div>
       <div class="legend"><span class="tag stroller">החוף עצמו: עגלה רק אם החול מאפשר</span><span class="tag carrier">מנשא: שימושי יותר על חול</span><span class="tag service">Leo: service animal</span><span class="tag risk">בדיקת fire restrictions</span></div>
       <details class="info">
         <summary>הלילה הזה נשאר עוגן</summary>
@@ -493,16 +496,16 @@ details.card[open]>summary:after{content:'▲'}
 <details class="card" id="day7">
   <summary>יום 7 · רביעי 14/10 · Sunset → Henry Cowell → Arata's → Half Moon Bay → East Bay</summary>
   <div class="content">
-    <div class="day-meta"><span>Arata's ביום חול</span><span>לילה 14/10: TBD</span><span>המלצה: Dumbarton Quarry</span></div>
+    <div class="day-meta"><span>🎃 Arata's ביום חול</span><span>🛏️ לילה 14/10: TBD</span><span>המלצה: Dumbarton Quarry</span></div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">07:30–08:30</span> קימה + ארוחת בוקר + checkout</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Campground_morning.jpg/800px-Campground_morning.jpg" alt="Morning Camp"></div>
+      <div class="visual">☕</div>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">09:15–10:45</span> Henry Cowell Redwoods — Redwood Grove Loop</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Henry_Cowell_Redwoods_State_Park_trail.jpg/800px-Henry_Cowell_Redwoods_State_Park_trail.jpg" alt="Henry Cowell Redwoods"></div>
+      <div class="visual">🌲</div>
       <div class="legend"><span class="tag stroller">עגלה: כן, זה אחד המסלולים הידידותיים ביותר</span><span class="tag carrier">מנשא: לא חובה</span><span class="tag service">Leo: service dog</span></div>
       <details class="info">
         <summary>מה אומרים המבקרים, ומה הלקח לנו</summary>
@@ -516,12 +519,12 @@ details.card[open]>summary:after{content:'▲'}
 
     <div class="schedule">
       <div class="time-block"><span class="clock">10:45–12:00</span> נסיעה ל-Half Moon Bay</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/California_Highway_1_scenic.jpg/800px-California_Highway_1_scenic.jpg" alt="Driving North"></div>
+      <div class="visual">🛣️</div>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">12:00–14:00</span> Arata's Pumpkin Farm</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Pumpkin_Patch_in_Half_Moon_Bay.jpg/800px-Pumpkin_Patch_in_Half_Moon_Bay.jpg" alt="Pumpkin Farm"></div>
+      <div class="visual">🎃</div>
       <div class="legend"><span class="tag stroller">עגלה: סביר ברוב האזור</span><span class="tag carrier">מנשא: שימושי אם צפוף</span><span class="tag service">Leo: כלב ידידותי, service dog מותר</span></div>
       <details class="info">
         <summary>למה Arata's נשארה דווקא כאן</summary>
@@ -529,7 +532,7 @@ details.card[open]>summary:after{content:'▲'}
           <p>הביקורות המעודכנות ל-2026 חיוביות מאוד לגבי המשפחה והפעילויות, והאתר הרשמי מתאר מגוון אטרקציות. בנוסף, Arata's היא אחת החוות הידידותיות יותר לכלבים, כולל כניסה עם כלב ברצועה ל-Hay Maze.</p>
           <p><strong>מה לעשות עם Arya:</strong> Pony Ride → Petting Zoo → Hay Ride → קצת Pumpkin displays. Hay Maze רק אם נהנים.</p>
           <p><strong>Budget:</strong> לא חייבים All Access. קונים פעילויות בודדות שמתאימות לה.</p>
-          <div class="parking-tip"><strong>RV:</strong> אין לי אישור רשמי חד-משמעי ש-24-ft Class C מוכנס לכל מגרש החניה. לכן מתקשרים לפני הכניסה ושואלים במפורש: “We have a 24-foot Class C motorhome. Can we park it in your customer parking area on Wednesday, October 14?”</div>
+          <div class="parking-tip"><strong>🚐 RV:</strong> אין לי אישור רשמי חד-משמעי ש-24-ft Class C מוכנס לכל מגרש החניה. לכן מתקשרים לפני הכניסה ושואלים במפורש: “We have a 24-foot Class C motorhome. Can we park it in your customer parking area on Wednesday, October 14?”</div>
           <p class="small">ב-2026 יש גם Premium Parking בתשלום בתאריכים נבחרים, אבל לא הייתי קונה אותו בלי צורך; המטרה שלכם היא ביקור יום-חול קצר.</p>
         </div>
       </details>
@@ -537,19 +540,19 @@ details.card[open]>summary:after{content:'▲'}
 
     <div class="schedule">
       <div class="time-block"><span class="clock">14:00–15:00</span> Half Moon Bay — עצירת צהריים/חוף קצר</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Half_Moon_Bay_Coast.jpg/800px-Half_Moon_Bay_Coast.jpg" alt="Half Moon Bay"></div>
+      <div class="visual">🌾</div>
       <details class="info"><summary>לא להפוך את זה לעוד יום חוף</summary><div class="inner"><p>החלק החשוב כאן הוא שה-14/10 הוא יום positioning לקראת San Carlos. אם כבר נהניתם מהחוף ביום 13, זו רק עצירת lunch/10–20 דקות נוף.</p></div></details>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">15:00–16:30</span> נסיעה ל-Dumbarton Quarry</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Winnebago_Motorhome.jpg/800px-Winnebago_Motorhome.jpg" alt="RV East Bay"></div>
+      <div class="visual">🌉</div>
       <details class="info">
         <summary>ברירת המחדל שלי ללילה 14/10</summary>
         <div class="inner">
           <p>Dumbarton Quarry נמצא ב-Fremont בתוך Coyote Hills. נכון לעדכון 2026: אתר RV עם water/sewer/electric עד 50A עולה $65 + $8 reservation fee; אתר water-only עולה $45 + $8. אין dump station.</p>
           <p>האתרים מתאימים לכלים ארוכים בהרבה מה-RV שלכם. חוות הדעת העדכניות/המקומיות מציגות אותו כקמפינג חדש יחסית, נקי ונוח, אם כי פחות יפה ומבודד מקמפינג חופי.</p>
-          <div class="success">היתרון ליום האחרון: אתם כבר במזרח המפרץ, ולכן בבוקר 15/10 הנסיעה ל-San Carlos קצרה משמעותית לעומת חזרה ל-Sunset/Half Moon Bay.</div>
+          <div class="success">🌆 היתרון ליום האחרון: אתם כבר במזרח המפרץ, ולכן בבוקר 15/10 הנסיעה ל-San Carlos קצרה משמעותית לעומת חזרה ל-Sunset/Half Moon Bay.</div>
           <p><strong>לפני שנכנסים:</strong> לעשות dump במקום אחר, כי Dumbarton עצמו לא מפעיל dump station.</p>
         </div>
       </details>
@@ -557,13 +560,13 @@ details.card[open]>summary:after{content:'▲'}
 
     <div class="schedule">
       <div class="time-block"><span class="clock">16:45–18:15</span> Coyote Hills / Bay sunset</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Coyote_Hills_Regional_Park_Sunset.jpg/800px-Coyote_Hills_Regional_Park_Sunset.jpg" alt="Coyote Hills"></div>
+      <div class="visual">🌇</div>
       <details class="info"><summary>ערב אחרון — קצר</summary><div class="inner"><p>הליכה קלה ליד המפרץ, תמונות, ואז חזרה ל-RV. לא יוצאים ל"מסלול אחרון" של שעתיים. אתם צריכים לסדר את הרכב.</p></div></details>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">18:30–20:00</span> ארוחת ערב + הכנת RV להחזרה</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Campground_morning.jpg/800px-Campground_morning.jpg" alt="RV Evening"></div>
+      <div class="visual">🧳</div>
       <details class="info"><summary>מה להכין כבר בלילה</summary><div class="inner"><ul><li>כביסה/זבל.</li><li>לרכז ציוד roadsurfer.</li><li>להפריד חפצים אישיים.</li><li>לרוקן/לשטוף לפי הוראות roadsurfer.</li><li>לתדלק קרוב למסלול ההחזרה.</li></ul></div></details>
     </div>
   </div>
@@ -572,28 +575,28 @@ details.card[open]>summary:after{content:'▲'}
 <details class="card" id="day8">
   <summary>יום 8 · חמישי 15/10 · Dumbarton/East Bay → San Carlos → San Francisco</summary>
   <div class="content">
-    <div class="day-meta"><span>החזרת RV</span><span>אחר כך רכב פרטי</span><span>San Francisco</span></div>
+    <div class="day-meta"><span>🚐 החזרת RV</span><span>🚗 אחר כך רכב פרטי</span><span>🏙️ San Francisco</span></div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">07:00–08:00</span> קימה + ארוחת בוקר</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Coffee_and_breakfast.jpg/800px-Coffee_and_breakfast.jpg" alt="Final Breakfast"></div>
+      <div class="visual">🌅</div>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">08:00–09:30</span> מים/דלק/dump/ניקוי לפי תנאי ההחזרה</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Cleaning_tools.jpg/800px-Cleaning_tools.jpg" alt="Cleaning RV"></div>
+      <div class="visual">🧹</div>
       <details class="info"><summary>מה לא להשאיר לרגע האחרון</summary><div class="inner"><p>ל-Dumbarton אין dump station. אל תגיעו להחזרה כשמכלים מלאים אם החוזה דורש dump. תכננו תחנת dump חוקית בדרך, והשאירו מרווח לפחות 45–60 דקות לפני שעת ההחזרה החוזית.</p></div></details>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">09:30–11:00</span> נסיעה ל-San Carlos + החזרת RV</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Winnebago_Motorhome.jpg/800px-Winnebago_Motorhome.jpg" alt="RV Return"></div>
+      <div class="visual">✅</div>
       <details class="info"><summary>זמן ההחזרה בפועל קובע</summary><div class="inner"><p>את השעה המדויקת כאן יש להצמיד להזמנה של roadsurfer. לא קובעים טיסת SFO מיד אחרי — אתם ממשיכים לסן פרנסיסקו ברכב פרטי.</p></div></details>
     </div>
 
     <div class="schedule">
       <div class="time-block"><span class="clock">אחרי ההחזרה</span> רכב פרטי → San Francisco</div>
-      <div class="visual"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/San_Francisco_from_the_Marin_Headlands_in_August_2020.jpg/800px-San_Francisco_from_the_Marin_Headlands_in_August_2020.jpg" alt="San Francisco"></div>
+      <div class="visual">🏙️</div>
       <details class="info"><summary>כלל זהב לחפצים ברכב</summary><div class="inner"><p>את המזוודות והאלקטרוניקה לא משאירים גלויים. אם חייבים לשים משהו בתא המטען — לעשות את זה לפני ההגעה לחניון/יעד, לא אחרי שהגעתם לחניה. אין צורך לשים שלט "אין דברי ערך ברכב".</p></div></details>
     </div>
   </div>
@@ -602,39 +605,39 @@ details.card[open]>summary:after{content:'▲'}
 <details class="card" id="checklist">
   <summary>📋 הצטיידות מעודכנת — מה באמת צריך</summary>
   <div class="content checklist">
-    <h3>Arya — חדש וחשוב</h3>
+    <h3>👶 Arya — חדש וחשוב</h3>
     <label class="check"><input type="checkbox" id="baby-1"><div><strong>Doona / מושב בטיחות מתאים ל-RV</strong><span class="qty">לוודא rear-facing והתקנה בפועל בתחנת האיסוף; לא להסתמך על ההנחה מהגרסה הישנה.</span></div></label>
     <label class="check"><input type="checkbox" id="baby-2"><div><strong>מנשא איכותי</strong><span class="qty">חשוב במיוחד: Point Lobos קטעים סלעיים, Asilomar tide pools, Carmel Beach חול, Partington Cove.</span></div></label>
     <label class="check"><input type="checkbox" id="baby-3"><div><strong>עגלה מתקפלת</strong><span class="qty">שימושית מאוד: Yosemite Valley, Aquarium, Carmel העירונית, Henry Cowell, חוות הדלעות.</span></div></label>
     <label class="check"><input type="checkbox" id="baby-4"><div><strong>שכבות חמות + כובע + rain/wind layer קל</strong><span class="qty">החוף יכול להרגיש קר משמעותית מהטמפרטורה הרשמית.</span></div></label>
 
-    <h3>Tide pools / טבע</h3>
+    <h3>🥾 Tide pools / טבע</h3>
     <label class="check"><input type="checkbox" id="gear-1"><div><strong>נעלי מים / trail shoes עם סוליה אוחזת</strong><span class="qty">לא כפכפים. הסלעים באסילומר יכולים להיות חלקים מאוד.</span></div></label>
     <label class="check"><input type="checkbox" id="gear-2"><div><strong>משקפת</strong><span class="qty">שווה במיוחד ל-Point Lobos ולחוף.</span></div></label>
     <label class="check"><input type="checkbox" id="gear-3"><div><strong>כיסוי טלפון עמיד למים</strong><span class="qty">שימושי ב-tide pools אם מצלמים קרוב למים.</span></div></label>
     <label class="check"><input type="checkbox" id="gear-4"><div><strong>Headlamp</strong><span class="qty">ל-North Pines ולהתמצאות בערב.</span></div></label>
 
-    <h3>RV</h3>
+    <h3>🚐 RV</h3>
     <label class="check"><input type="checkbox" id="rv-1"><div><strong>Offline Google Maps</strong><span class="qty">להוריד Yosemite + Big Sur + Monterey + Bay Area לפני היציאה.</span></div></label>
     <label class="check"><input type="checkbox" id="rv-2"><div><strong>מטען USB / 12V</strong><span class="qty">לא להניח שתהיה קליטה או חשמל בכל יום.</span></div></label>
     <label class="check"><input type="checkbox" id="rv-3"><div><strong>מילוי מים potable</strong><span class="qty">מי המכל של RV נועדו לשתייה כאשר ממלאים ממקור potable תקין ושומרים על המערכת נקייה. אין צורך לקנות 5 גלונים רק כי "אסור לשתות ממיכל RV".</span></div></label>
     <label class="check"><input type="checkbox" id="rv-4"><div><strong>נייר טואלט / חומרי ניקוי septic-safe</strong><span class="qty">לפי הוראות roadsurfer. לא צריך אוטומטית "RV toilet paper" מיוחד אם המוצר מתאים למערכת.</span></div></label>
     <label class="check"><input type="checkbox" id="rv-5"><div><strong>פנסים + נעלי עבודה/כפפות דקות</strong><span class="qty">לטיפול בצינור dump ולחיבורים.</span></div></label>
 
-    <h3>Leo</h3>
+    <h3>🐕 Leo</h3>
     <label class="check"><input type="checkbox" id="leo-1"><div><strong>רצועה / ציוד עבודה</strong><span class="qty">service dog: שליטה פיזית או דרך אחרת אפקטיבית כאשר נדרש.</span></div></label>
     <label class="check"><input type="checkbox" id="leo-2"><div><strong>שקיות + קערה + מים</strong><span class="qty">גם ביום שבו החנות/פארק ידידותיים לכלבים.</span></div></label>
     <label class="check"><input type="checkbox" id="leo-3"><div><strong>מסמכי כלבת/בריאות</strong><span class="qty">עבור הטיול אין צורך למסמכים מיוחדים כדי להוכיח service dog, אבל פנקס רפואי זמין הוא פרקטי.</span></div></label>
     <label class="check"><input type="checkbox" id="leo-4"><div><strong>לא להציג אותו כ"pet" כשמתקשרים</strong><span class="qty">הניסוח הנכון: trained service dog / service animal.</span></div></label>
 
-    <h3>מזון — גרסה יעילה יותר</h3>
+    <h3>🥫 מזון — גרסה יעילה יותר</h3>
     <label class="check"><input type="checkbox" id="food-1"><div><strong>ביצים, לחם/טורטיות, גבינות, יוגורט, פירות וירקות</strong><span class="qty">כמות לשבוע לפי קצב האכילה בפועל — לא צריך לקנות 24 ביצים אם מחוץ ל-RV תאכלו הרבה.</span></div></label>
     <label class="check"><input type="checkbox" id="food-2"><div><strong>פסטה + רוטב + טאקו/עוף + נקניקיות/המבורגר</strong><span class="qty">4–5 ארוחות ערב קלות מסודרות מספיקות; השאר אוכלים בחוץ.</span></div></label>
     <label class="check"><input type="checkbox" id="food-3"><div><strong>חטיפים ל-Arya</strong><span class="qty">שקיות אישיות לנסיעות הארוכות.</span></div></label>
     <label class="check"><input type="checkbox" id="food-4"><div><strong>מים לשתייה לפי העדפה</strong><span class="qty">לא חובה לקנות 4–5 גלונים בגלל פחד ממי RV; אפשר למלא potable ולהחזיק כמה בקבוקי גיבוי.</span></div></label>
     <label class="check"><input type="checkbox" id="food-5"><div><strong>בירה/יין — אופציונלי</strong><span class="qty">לא לקנות אוטומטית; תופס מקום ומחייב אחסון.</span></div></label>
 
-    <h3>אש / קמפינג</h3>
+    <h3>🔥 אש / קמפינג</h3>
     <label class="check"><input type="checkbox" id="fire-1"><div><strong>לא לקנות שק פחמים לפני שבודקים fire restrictions</strong><span class="qty">Yosemite נמצא כרגע תחת fire restrictions מתחת ל-8,000 ft; חריגים תלויים באתר ובכללים המקומיים.</span></div></label>
   </div>
 </details>
@@ -643,6 +646,7 @@ details.card[open]>summary:after{content:'▲'}
   <summary>🔎 מקורות ומחקר — רשמי + ביקורות/פורומים</summary>
   <div class="content research-list">
     <p>הגרסה הזאת נבנתה על cross-check בין מקורות רשמיים עדכניים לבין Reddit/Tripadvisor ונתוני ביקורות ציבוריים. ביקורות משמשות להערכת חוויה, עומס ונוחות — לא להחלפת כללים רשמיים.</p>
+
     <h3 class="section-title" style="margin-top:10px">Yosemite / RV / בטיחות</h3>
     <a href="https://www.nps.gov/yose/planyourvisit/conditions.htm" target="_blank" rel="noopener">NPS — Current Conditions</a>
     <a href="https://www.nps.gov/yose/planyourvisit/rv.htm" target="_blank" rel="noopener">NPS — Visiting Yosemite With an RV</a>
@@ -652,10 +656,12 @@ details.card[open]>summary:after{content:'▲'}
     <a href="https://www.recreation.gov/camping/campsites/627" target="_blank" rel="noopener">Recreation.gov — North Pines Site 323</a>
     <a href="https://www.nps.gov/yose/learn/news/dome-fire-update-october-5-2026-morning.htm" target="_blank" rel="noopener">NPS — Dome Fire update (latest cited)</a>
     <a href="https://roads.dot.ca.gov/?roadnumber=27%2C1%2C101" target="_blank" rel="noopener">Caltrans — current road conditions</a>
+
     <h3 class="section-title">Child restraint</h3>
     <a href="https://www.cdph.ca.gov/Programs/CCDPHP/DCDIC/SACB/Pages/Child-Passenger-Safety/CarSeatBasics.aspx" target="_blank" rel="noopener">California Department of Public Health — Car Seat Basics</a>
     <a href="https://www.chp.ca.gov/Programs-Services/Programs/Child-Safety-Seats" target="_blank" rel="noopener">California Highway Patrol — Child Safety Seats</a>
     <a href="https://www.thormotorcoach.com/cmsnew/media/ZoxADh5LeNNTw6eb_TMCOM_0562643R240501_ClassA%26C_WEB_240508_EN.pdf" target="_blank" rel="noopener">Thor Motor Coach — Class A/C Vehicle Safety Manual</a>
+
     <h3 class="section-title">Monterey / tide pools</h3>
     <a href="https://www.montereybayaquarium.org/visit/admission-tickets" target="_blank" rel="noopener">Monterey Bay Aquarium — 2026 ticket prices</a>
     <a href="https://www.montereybayaquarium.org/visit/directions-parking" target="_blank" rel="noopener">Aquarium — directions & parking</a>
@@ -664,15 +670,18 @@ details.card[open]>summary:after{content:'▲'}
     <a href="https://www.reddit.com/r/MontereyBay/comments/1rkk286/tide_pools/" target="_blank" rel="noopener">Reddit — tide pool safety / Asilomar recommendations</a>
     <a href="https://www.reddit.com/r/MontereyBay/comments/145m8vd/asilomar_tide_pool_visit/" target="_blank" rel="noopener">Reddit — Asilomar tide pools with family/toddler</a>
     <a href="https://coastcue.com/tides/ca/monterey-monterey-bay-9413450/" target="_blank" rel="noopener">NOAA station 9413450 derived tide table — 10/10/2026</a>
+
     <h3 class="section-title">Point Lobos / Carmel</h3>
     <a href="https://parks.ca.gov/?page_id=571" target="_blank" rel="noopener">California State Parks — Point Lobos</a>
     <a href="https://demo2.parks.ca.gov/AccessibleFeatures/Details/571" target="_blank" rel="noopener">California State Parks — Point Lobos accessibility</a>
     <a href="https://www.parkme.com/lot/222558/p-r-crossroads-shopping-center-monterey-ca" target="_blank" rel="noopener">Crossroads P+R — public listing/current surface-lot information</a>
     <a href="https://www.tripadvisor.com/FAQ_Answers-g32172-d102545-t4860729-We_have_two_little_kids_1_and_3_years_old_Are.html" target="_blank" rel="noopener">Tripadvisor — Point Lobos with toddlers/stroller</a>
+
     <h3 class="section-title">Big Sur</h3>
     <a href="https://parks.ca.gov/?page_id=579" target="_blank" rel="noopener">California State Parks — Garrapata</a>
     <a href="https://roads.dot.ca.gov/?roadnumber=27%2C1%2C101" target="_blank" rel="noopener">Caltrans — SR 1 current controls</a>
     <a href="https://dot.ca.gov/caltrans-near-me/district-5/d5-news/d5-news-10-01-2026-2" target="_blank" rel="noopener">Caltrans — Big Sur overnight closure notice for 8/10</a>
+
     <h3 class="section-title">Redwoods / Pumpkin Farm / final night</h3>
     <a href="https://www.tripadvisor.com/Attraction_Review-g32377-d116849-Reviews-Henry_Cowell_Redwoods_State_Park-Felton_California.html" target="_blank" rel="noopener">Tripadvisor — Henry Cowell (2026 reviews)</a>
     <a href="https://www.reddit.com/r/bayarea/comments/1emqs9r/paved_hikingwalking_trails_in_the_redwoods/" target="_blank" rel="noopener">Reddit — stroller-friendly redwood trail discussion</a>
@@ -700,6 +709,133 @@ details.card[open]>summary:after{content:'▲'}
   });
 })();
 </script>
+
+<script>
+(function(){
+  // מיפוי חכם ומשופר - מתאים בדיוק לטקסטים בקוד
+  var MAP=[
+    [/San Carlos/,'san-carlos','San Carlos, California','San Carlos California'],
+    [/groceries/,'groceries',null,'Supermarket aisle'],
+    [/נסיעה ל-Yosemite Valley/,'yosemite-valley','Yosemite Valley','Yosemite Valley panorama'],
+    [/North Pines/,'north-pines',null,'Yosemite pines camping'],
+    [/Lower Yosemite Fall/,'lower-yosemite-fall','Yosemite Falls','Lower Yosemite Fall'],
+    [/Valley \/ נהר/,'merced-river','Merced River','Merced River Yosemite'],
+    [/Tunnel View/,'tunnel-view',null,'Tunnel View Yosemite'],
+    [/נסיעה ל-Laguna Seca/,'laguna-seca','WeatherTech Raceway Laguna Seca','Laguna Seca Recreation Area'],
+    [/נסיעה למונטריי/,'monterey-drive','Monterey, California','Monterey California coast'],
+    [/Monterey Bay Aquarium/,'aquarium','Monterey Bay Aquarium','Monterey Bay Aquarium'],
+    [/Cannery Row/,'cannery-row','Cannery Row','Cannery Row Monterey'],
+    [/Pacific Grove \+ Asilomar/,'asilomar','Asilomar State Beach','Asilomar tide pools'],
+    [/Point Lobos/,'point-lobos','Point Lobos State Natural Reserve','Point Lobos cypress coast'],
+    [/Carmel-by-the-Sea/,'carmel','Carmel-by-the-Sea, California','Carmel-by-the-Sea beach'],
+    [/Garrapata/,'garrapata','Garrapata State Park','Garrapata State Park'],
+    [/Hurricane Point/,'bixby','Bixby Creek Bridge','Bixby Creek Bridge'],
+    [/נסיעה דרומה ב-Big Sur/,'big-sur-drive','Big Sur','Highway 1 Big Sur coast'],
+    [/Big Sur Valley lunch/,'big-sur-valley',null,'Big Sur river forest'],
+    [/Partington Cove/,'partington','Partington Cove','Partington Cove Big Sur'],
+    [/Moss Landing/,'moss-landing','Moss Landing, California','Moss Landing harbor sea otter'],
+    [/Capitola Village/,'capitola','Capitola, California','Capitola Village beach'],
+    [/Sunset State Beach/,'sunset-beach','Sunset State Beach','Sunset State Beach California'],
+    [/Henry Cowell/,'henry-cowell','Henry Cowell Redwoods State Park','Henry Cowell Redwoods'],
+    [/Arata/,'arata',null,'Pumpkin patch Half Moon Bay'],
+    [/Half Moon Bay/,'half-moon-bay','Half Moon Bay, California','Half Moon Bay coast'],
+    [/Dumbarton Quarry/,'dumbarton',null,'Dumbarton Quarry Campground'],
+    [/Coyote Hills/,'coyote-hills','Coyote Hills Regional Park','Coyote Hills Regional Park'],
+    [/San Francisco/,'san-francisco','San Francisco','San Francisco skyline Golden Gate Bridge']
+  ];
+
+  // שינוי המפתח כדי לנקות את הזיכרון (Cache) הישן
+  var CACHE_PREFIX = 'ca-rv-2026-v7:';
+  var used = {};
+
+  function norm(u){
+    try{ u=decodeURIComponent(u).replace(/\/\d+px-[^\/]+$/,''); }catch(e){}
+    return u.split('/').pop().toLowerCase();
+  }
+
+  function tfetch(u){
+    var c=new AbortController(), t=setTimeout(function(){c.abort();},8000);
+    return fetch(u,{signal:c.signal, headers:{'Accept':'application/json'}})
+      .then(function(r){clearTimeout(t);return r;})
+      .catch(function(e){clearTimeout(t);throw e;});
+  }
+
+  function wiki(title){
+    return tfetch('https://en.wikipedia.org/api/rest_v1/page/summary/'+encodeURIComponent(title.replace(/ /g,'_')))
+      .then(function(r){return r.ok?r.json():null;})
+      .then(function(j){
+        if(!j||j.type==='disambiguation'||!j.thumbnail) return [];
+        return [{src:j.thumbnail.source.replace(/\/\d+px-/,'/800px-'),page:j.content_urls&&j.content_urls.desktop&&j.content_urls.desktop.page}];
+      }).catch(function(){return [];});
+  }
+
+  function commons(q){
+    var u='https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*&generator=search&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url|mime&iiurlwidth=800&gsrsearch='+encodeURIComponent(q);
+    return tfetch(u).then(function(r){return r.json();}).then(function(j){
+      var pages=j.query?Object.values(j.query.pages):[];
+      pages.sort(function(a,b){return (a.index||0)-(b.index||0);});
+      return pages.filter(function(p){
+        var ii=p.imageinfo&&p.imageinfo[0];
+        return ii&&/^image\/(jpeg|png)$/.test(ii.mime)&&!/map|logo|flag|diagram|icon|coat|seal|plan|chart/i.test(p.title);
+      }).map(function(p){var ii=p.imageinfo[0];return {src:ii.thumburl||ii.url,page:ii.descriptionurl};});
+    }).catch(function(){return [];});
+  }
+
+  function candidates(m){
+    var ck=CACHE_PREFIX+m[1];
+    try{ var c=JSON.parse(localStorage.getItem(ck)||'null'); if(c&&c.length) return Promise.resolve(c); }catch(e){}
+    return Promise.all([m[2]?wiki(m[2]):[],commons(m[3])]).then(function(a){
+      var all=a[0].concat(a[1]).slice(0,6);
+      if(all.length){try{localStorage.setItem(ck,JSON.stringify(all));}catch(e){}}
+      return all;
+    });
+  }
+
+  function show(v,list,alt){
+    if(!list.length) return;
+    var r=list[0], img=document.createElement('img');
+    img.alt=alt; img.decoding='async'; img.referrerPolicy='no-referrer';
+    img.onload=function(){
+      v.classList.add('has-img'); img.classList.add('ok');
+      if(r.page){var a=document.createElement('a'); a.className='credit'; a.href=r.page; a.target='_blank'; a.rel='noopener'; a.textContent='Wikipedia / Commons'; v.appendChild(a);}
+    };
+    img.onerror=function(){ img.remove(); show(v,list.slice(1),alt); };
+    v.appendChild(img);
+    img.src=r.src;
+  }
+
+  var slots=[];
+  document.querySelectorAll('.schedule').forEach(function(s){
+    var t=s.querySelector('.time-block'), v=s.querySelector('.visual');
+    if(!t||!v) return;
+    var m=MAP.find(function(x){return x[0].test(t.textContent);});
+    if(m) slots.push({v:v,m:m});
+  });
+
+  // מנגנון הטור החכם: טוען תמונות אחת אחרי השנייה ולא בבת אחת כדי לא לקרוס
+  async function loadAll() {
+    for (let s of slots) {
+      try {
+        let list = await candidates(s.m);
+        if(list && list.length) {
+          let pick = -1;
+          for(let i=0; i<list.length; i++){
+            if(!used[norm(list[i].src)]){ pick = i; break; }
+          }
+          if(pick >= 0) {
+            used[norm(list[pick].src)] = true;
+            show(s.v, list.slice(pick), s.m[1]);
+          }
+        }
+      } catch(e) {}
+      await new Promise(r => setTimeout(r, 250)); // הפסקה קצרה בין בקשה לבקשה
+    }
+  }
+  
+  loadAll();
+})();
+</script>
+
 </main>
 </body>
 </html>
